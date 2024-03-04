@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero'; 
+import WAIconComponent from './Components/WhatsAppIconComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      <Navbar/>
+      <Hero/>
+      <WAIconComponent/>
+      <header>
+        <h1 className='font-mono text-6xl'>Fuente para título h1</h1>
+        <h2 className='font-mono text-5xl'>Fuente para título h2</h2>
+        <h3 className='font-mono text-3xl'>Fuente para título h3</h3>
+
+        <p className='font-mono text-base'>
+        Fuente para párrafos
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
-    </div>
+      <div className='flex back'>
+        <div className='bg-violet-brand text-white p-8'>
+          Color 60%: #942a70 
+        </div>
+        <div className='bg-light-blue-brand p-8'>
+          Color 30%: #D7E1E5
+        </div>
+        <div className='bg-light-gray-brand p-8' > 
+          Color 20%: #f2f2f2
+        </div>
+      </div>
+    </>
   );
 }
 
