@@ -1,12 +1,15 @@
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero'; 
 import WAIconComponent from './Components/WhatsAppIconComponent';
+import ProjectComponent from './Components/ProjectSectionComponent';
+
 
 function App() {
   return (
     <>
       <Navbar/>
       <Hero/>
+      <ProjectComponent/>
       <WAIconComponent/>
       <header>
         <h1 className='font-mono text-6xl'>Fuente para título h1</h1>

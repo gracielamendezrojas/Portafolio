@@ -12,7 +12,7 @@ function Hero(){
         </div>
         <div className='p-20 w-1/2 animate-in slide-in-from-left duration-1000 text-center '>
             <h2 className='font-mono text-5xl leading-12' >¡Hola! </h2>
-            <h1 className='font-mono text-3xl leading-11'> Soy María Graciela Méndez Rojas</h1>
+            <h3 className='font-mono text-3xl leading-11'> Soy María Graciela Méndez Rojas</h3>
             <p className='font-mono text-xl pb-10'>Ingeniera de Software con experiencia en PL SQL y análisis de datos, liderando soluciones backend que agilicen procesos empresariales. </p>
             <img src={logo} className='h-48 pb-10 ' alt="logo"/>
             <h1 className='font-mono text-6xl '> Liderando con resultados contundentes</h1>
