@@ -5,15 +5,18 @@ import ProjectComponent from './Components/ProjectSectionComponent';
 import Contact from './Components/Contact';
 
 
-
 function App() {
+
+
   return (
     <>
+      
       <Navbar/>
       <Hero/>
       <ProjectComponent/>
       <WAIconComponent/>
       <Contact/>
+
       <header>
         <h1 className='font-mono text-6xl'>Fuente para título h1</h1>
         <h2 className='font-mono text-5xl'>Fuente para título h2</h2>
