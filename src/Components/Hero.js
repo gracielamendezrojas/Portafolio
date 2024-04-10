@@ -13,7 +13,9 @@ function Hero(){
             <h2 className='font-mono text-5xl leading-12' >¡Hola! </h2>
             <h3 className='font-mono text-3xl leading-11'> Soy María Graciela Méndez Rojas</h3>
             <p className='font-mono text-xl pb-10'>Ingeniera de Software con experiencia en PL SQL y análisis de datos, liderando soluciones backend que agilicen procesos empresariales. </p>
-            <img src={logo} className='h-48 pb-10 ' alt="logo"/>
+            <div className='flex w-full justify-center'>
+                <img src={logo} className='h-48 pb-10text-center' alt="logo"/>
+            </div>
             <h1 className='font-mono text-6xl '> Liderando con resultados contundentes</h1>
         </div>
     </div>

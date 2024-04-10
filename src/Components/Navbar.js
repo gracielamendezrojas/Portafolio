@@ -6,10 +6,10 @@ function Navbar(){
         <img className=" h-12 pr-15"src={logo} alt="logo"/>
             
         <ul className=" flex flex-1 container-sm justify-evenly pl-96 pt-2">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#aboutMe">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>            
+            <li><a href="">Redes sociales</a></li>
+            <li><a href="">Contacto</a></li>
         </ul>
     </nav>
     )

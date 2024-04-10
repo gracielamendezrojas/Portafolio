@@ -2,7 +2,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero'; 
 import WAIconComponent from './Components/WhatsAppIconComponent';
 import ProjectComponent from './Components/ProjectSectionComponent';
-import Contact from './Components/Contact';
+import SocialMedia from './Components/SocialMedia';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Hero/>
       <ProjectComponent/>
       <WAIconComponent/>
-      <Contact/>
+      <SocialMedia/>
 
       <header>
         <h1 className='font-mono text-6xl'>Fuente para título h1</h1>

@@ -1,13 +1,13 @@
-import projectPhoto from '../Images/SignatureGra.png';
+import projectPhoto from '../Images/VenusProject.png';
 
 
 function ProjectComponent(){
     return(
-    <div className="flex flex-row justify-center ">
-        <div className='w-1/2 h-dvh overflow-y-hidden'>
+    <div className="flex flex-row justify-center bg-light-gray-brand p-20">
+        <div className='w-1/2 overflow-y-hidden pr-10'>
             <img src={projectPhoto} alt="projectPhoto"/>
         </div>
-        <div className='p-20 w-1/2  '>
+        <div className=' w-1/2  pl-10'>
             <div>
                 <h2 className='font-mono text-5xl leading-12' >Proyecto Venus</h2>
                 <h3 className='font-mono text-3xl leading-11'>Descripción</h3>
