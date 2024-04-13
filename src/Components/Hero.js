@@ -7,7 +7,6 @@ function Hero(){
     <div className="flex flex-row justify-center ">
         <div className='w-1/2 h-dvh overflow-y-hidden'>
             <img className="" src={photo} alt="photo"/>
-
         </div>
         <div className='p-20 w-1/2 animate-in slide-in-from-left duration-1000 text-center '>
             <h2 className='font-mono text-5xl leading-12' >¡Hola! </h2>
