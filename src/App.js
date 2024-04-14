@@ -1,8 +1,10 @@
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero'; 
 import WAIconComponent from './Components/WhatsAppIconComponent';
-import ProjectComponent from './Components/ProjectSectionComponent';
+import ProjectComponentVenus from './Components/ProjectSectionComponentVenus';
+import ProjectComponentGame from './Components/ProjectSectionComponentGame';
 import SocialMedia from './Components/SocialMedia';
+import ContactForm from './Components/ContactForm';
 
 
 function App() {
@@ -12,9 +14,11 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
-      <ProjectComponent/>
+      <ProjectComponentVenus/>
+      <ProjectComponentGame/>
       <WAIconComponent/>
       <SocialMedia/>
+      <ContactForm/>
 
       <header>
         <h1 className='font-mono text-6xl'>Fuente para título h1</h1>
