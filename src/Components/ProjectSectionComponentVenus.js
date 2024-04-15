@@ -7,8 +7,8 @@ import spring from '../Images/Spring.png';
 
 function ProjectComponentVenus(){
     return(
-    <div className="flex flex-row justify-center bg-light-gray-brand p-20">
-        <div className='w-1/2 overflow-y-hidden pr-10'>
+    <div className="flex flex-row justify-center bg-light-gray-brand pl-20 pr-20 pb-20">
+        <div className='w-1/2 overflow-y-hidden pr-10 flex justify-center items-center'>
             <img src={projectPhoto} alt="projectPhoto"/>
         </div>
         <div className=' w-1/2  pl-10'>

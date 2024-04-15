@@ -29,7 +29,7 @@ function ProjectComponentGame(){
                 </div>
             </div>
         </div>
-        <div className='w-1/2 overflow-y-hidden pl-10'>
+        <div className='w-1/2 overflow-y-hidden pl-10 flex justify-center items-center'>
             <img src={projectPhoto} alt="projectPhoto"/>
         </div>
 
