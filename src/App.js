@@ -7,6 +7,7 @@ import SocialMedia from './Components/SocialMedia';
 import ContactForm from './Components/ContactForm';
 import ProjectComponentCenfoMarket from './Components/ProjectSectionComponentCenfoMarket';
 import ProjectsIntroduction from './Components/ProjectsIntroduction';
+import ContactSection from './Components/ContactSection';
 
 
 function App() {
@@ -22,8 +23,7 @@ function App() {
       <ProjectComponentCenfoMarket/>
       <WAIconComponent/>
       <SocialMedia/>
-      <ContactForm/>
-
+      <ContactSection/>
     </>
   );
 }

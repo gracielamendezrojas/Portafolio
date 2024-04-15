@@ -9,24 +9,24 @@ import Lottie from "lottie-react";
 function Contact(){
 
     return(
-        <div className=' pt-10'>
+        <div className=' py-10'>
             <h3 className='font-mono text-3xl text-center'>Visita mis páginas y descarga mi currículo</h3>
-            <p className='font-mono  font-black	text-base text-center pt-5 '>¡Haz click en las imágenes!</p>
+            <p className='font-mono  font-black	text-xl text-center pt-5 '>¡Haz click en las imágenes!</p>
 
 
             <div className='flex flex-row justify-evenly p-10'>
                 <a href='https://github.com/gracielamendezrojas' target='_blank' className='text-center grayscale text-violet-brand hover:grayscale-0'>
                 <Lottie className="h-32" animationData={animationGitHub}  alt="GitHubVGLottie"/>
-                    <p className='font-mono  font-black	text-base '>Portafolio web</p>
+                    <p className='font-mono  font-black	text-xl'>Portafolio web</p>
                 </a>
                 <a href='https://www.linkedin.com/in/graciela-mendez/' target='_blank' className='text-center grayscale text-violet-brand hover:grayscale-0'>
                     <Lottie className="h-32" animationData={animationLinkedIn} alt="LinkedInSVGLottie"/>
-                    <p className='font-mono  font-black	 text-base'>Perfil personal</p>
+                    <p className='font-mono  font-black	text-xl'>Perfil personal</p>
                 </a>
                 <a href='Graciela_Mendez_CV.pdf' download ='Graciela_Mendez_CV.pdf' className='text-center grayscale text-violet-brand hover:grayscale-0' >
                     <button>
                     <Lottie className="h-32" animationData={animationCV}  alt="CVLottie"/>
-                    <p className='font-mono font-black	 text-base'>Curriculum vitae</p>
+                    <p className='font-mono font-black	text-xl'>Curriculum vitae</p>
                     </button>
                 </a>
             </div>
