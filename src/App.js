@@ -8,13 +8,16 @@ import ContactForm from './Components/ContactForm';
 import ProjectComponentCenfoMarket from './Components/ProjectSectionComponentCenfoMarket';
 import ProjectsIntroduction from './Components/ProjectsIntroduction';
 import ContactSection from './Components/ContactSection';
-
+import { useState } from "react";
+import { LanguageContext } from "./Context/Language";
 
 function App() {
-
+  const [language, setLanguage] = useState("EN");
 
   return (
     <>
+    <LanguageContext.Provider value={{ language, setLanguage }}>
+
       <Navbar/>
       <Hero/>
       <ProjectsIntroduction/>
@@ -24,6 +27,8 @@ function App() {
       <WAIconComponent/>
       <SocialMedia/>
       <ContactSection/>
+      </LanguageContext.Provider>
+
     </>
   );
 }
