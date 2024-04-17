@@ -51,7 +51,7 @@ function ContactForm(){
             <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6"></textarea>
           </div>
         </div>
-          <button type="button" class=" cursor-pointer flex items-center justify-center rounded-full p-2 bg-violet-brand text-white hover:text-violet-brand hover:bg-white hover:font-extrabold hover:border-solid hover:border-2 hover:border-violet-brand">{labels[language].button}</button>   
+          <button type="button" class=" cursor-pointer flex items-center justify-center rounded-full py-2 px-5 bg-violet-brand text-white hover:text-violet-brand hover:bg-white hover:font-extrabold hover:border-solid hover:border-2 hover:border-violet-brand">{labels[language].button}</button>   
 </form>
     )
 }

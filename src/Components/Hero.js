@@ -2,6 +2,7 @@ import photo from '../Images/photoGraT.png';
 import logo from '../Images/LogoTransparency.png';
 import { useContext } from "react";
 import { LanguageContext } from "../Context/Language";
+import SimpleSlider from './SlickCarousel';
 
 
 function Hero(){
@@ -21,7 +22,7 @@ function Hero(){
     return(
     <div className="flex flex-row justify-center ">
         <div className='w-1/2 h-dvh overflow-y-hidden'>
-            <img  src={photo} alt="photo"/>
+            <img src={photo} alt="photo"/>
         </div>
         <div className='p-20 w-1/2 animate-in slide-in-from-left duration-1000 text-center '>
             <h2 className='font-mono text-5xl leading-12' >{labels[language].hi} </h2>
@@ -30,6 +31,7 @@ function Hero(){
             <div className='flex w-full justify-center'>
                 <img src={logo} className='h-48 pb-20 text-center' alt="logo"/>
             </div>
+            <SimpleSlider/>
         </div>
     </div>
     )
