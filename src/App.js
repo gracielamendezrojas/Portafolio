@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import ProjectComponentCenfoMarket from './Components/ProjectSectionComponentCenfoMarket';
 import ProjectsIntroduction from './Components/ProjectsIntroduction';
 import ContactSection from './Components/ContactSection';
+import ScrollTopButton from './Components/ScrollTopButton';
 import { useState } from "react";
 import { LanguageContext } from "./Context/Language";
 
@@ -23,10 +24,11 @@ function App() {
         <ProjectComponentVenus/>
         <ProjectComponentGame/>
         <ProjectComponentCenfoMarket/>
-        <WAIconComponent/>
         <SocialMedia/>
         <ContactSection/>
         <Footer/>
+        <WAIconComponent/>
+        <ScrollTopButton/>
       </LanguageContext.Provider>
 
     </>
