@@ -17,6 +17,7 @@ function Contact(){
         linkedIn: "Perfil personal de LinkedIn",
         repository: "Repositorio GitHub", 
         resume: "Curriculum vitae", 
+        download: "Graciela_Mendez_CV.pdf",
       },
       EN: {
         title: "Visit my pages and download my resume",
@@ -24,11 +25,12 @@ function Contact(){
         linkedIn: "Personal LinkedIn Profile",
         repository: "GitHub Repository", 
         resume: "Resume", 
+        download: "Graciela_Mendez_Resume.pdf", 
       },
     };
 
     return(
-        <div className=' py-10'>
+        <div id="socialNetworks" className=' py-10'>
             <h3 className='font-mono text-5xl text-center '>{labels[language].title}</h3>
             <p className='font-mono  font-black	text-xl text-center pt-5 '>{labels[language].description}</p>
 
@@ -42,7 +44,7 @@ function Contact(){
                     <Lottie className="h-32" animationData={animationLinkedIn} alt="LinkedInSVGLottie"/>
                     <p className='font-mono  font-black	text-xl'>{labels[language].linkedIn}</p>
                 </a>
-                <a href='Graciela_Mendez_CV.pdf' download ='Graciela_Mendez_CV.pdf' className='text-center grayscale text-violet-brand hover:grayscale-0' >
+                <a href='Graciela_Mendez_CV.pdf' download ={labels[language].download} className='text-center grayscale text-violet-brand hover:grayscale-0' >
                     <button>
                     <Lottie className="h-32" animationData={animationCV}  alt="CVLottie"/>
                     <p className='font-mono font-black	text-xl'>{labels[language].resume}</p>

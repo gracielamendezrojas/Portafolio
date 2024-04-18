@@ -2,8 +2,28 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useContext } from "react";
+import { LanguageContext } from "../Context/Language";
 
 export default function SimpleSlider() {
+  const { language } = useContext(LanguageContext);
+  const labels = {
+    ES: {
+      value1: "Empatía",
+      value2: "Lealtad", 
+      value3: "Integridad",
+      value4: "Liderazgo",
+      value5: "Perseverancia",
+    },
+    EN: {
+      value1: "Empathy",
+      value2: "Loyalty", 
+      value3: "Integrity",
+      value4: "Leadership",
+      value5: "Perseverance",
+
+    },
+  };
   var settings = {
     dots: false,
     infinite: true,
@@ -15,24 +35,21 @@ export default function SimpleSlider() {
   };
   return (
     <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
+        <div>
+          <p className='font-mono text-5xl pb-5 '> {labels[language].value1} </p>
+        </div>
+        <div>
+          <p className='font-mono text-5xl pb-5'> {labels[language].value2} </p>
+        </div>
+        <div>
+          <p className='font-mono text-5xl pb-5'> {labels[language].value3} </p>
+        </div>
+        <div>
+          <p className='font-mono text-5xl pb-5'> {labels[language].value4} </p>
+        </div>
+        <div>
+          <p className='font-mono text-5xl pb-5'> {labels[language].value5} </p>
+        </div>
     </Slider>
   );
 }

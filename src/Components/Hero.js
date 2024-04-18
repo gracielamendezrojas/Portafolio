@@ -20,18 +20,20 @@ function Hero(){
         }
     }; 
     return(
-    <div className="flex flex-row justify-center ">
+    <div id="aboutMe" className="flex flex-row justify-center ">
         <div className='w-1/2 h-dvh overflow-y-hidden'>
             <img src={photo} alt="photo"/>
         </div>
-        <div className='p-20 w-1/2 animate-in slide-in-from-left duration-1000 text-center '>
+        <div className='p-10 w-1/2 text-center '>
             <h2 className='font-mono text-5xl leading-12' >{labels[language].hi} </h2>
             <h3 className='font-mono text-3xl leading-11'>{labels[language].me} </h3>
             <p className='font-mono text-xl pb-10'> {labels[language].profile} </p>
-            <div className='flex w-full justify-center'>
-                <img src={logo} className='h-48 pb-20 text-center' alt="logo"/>
+            <div className='flex w-full justify-center pb-20'>
+                <img src={logo} className='h-56  text-center' alt="logo"/>
             </div>
-            <SimpleSlider/>
+            <div className='pt-20 pb-10'>
+                <SimpleSlider/>
+            </div>
         </div>
     </div>
     )

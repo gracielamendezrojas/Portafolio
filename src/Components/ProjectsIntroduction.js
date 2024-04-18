@@ -13,7 +13,7 @@ function ProjectsIntroduction(){
       }
     };
     return(
-    <div className="text-center justify-center bg-light-blue-brand py-20">
+    <div id="projects" className="text-center justify-center bg-light-blue-brand py-20">
 
         <h2 className='font-mono text-5xl ' >{labels[language].title}</h2>
         <p className='font-mono text-2xl py-10'>{labels[language].description}</p>
