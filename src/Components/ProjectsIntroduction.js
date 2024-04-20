@@ -13,10 +13,10 @@ function ProjectsIntroduction(){
       }
     };
     return(
-    <div id="projects" className="text-center justify-center bg-light-blue-brand py-20">
+    <div id="projects" className="text-center justify-center bg-light-blue-brand py-20 cursor-default">
 
-        <h2 className='font-mono text-5xl ' >{labels[language].title}</h2>
-        <p className='font-mono text-2xl py-10'>{labels[language].description}</p>
+        <h2 className=' font-mono xl:text-5xl text-3xl text-center font-black xl:font-normal ' >{labels[language].title}</h2>
+        <p className='font-mono xl:text-2xl text-xl p-10'>{labels[language].description}</p>
 
     </div>
     )

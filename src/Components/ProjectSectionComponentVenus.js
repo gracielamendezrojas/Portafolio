@@ -33,15 +33,15 @@ function ProjectComponentVenus(){
           },
         };
         return(
-        <div className='bg-light-gray-brand p-5'>
-            <h2 className='font-mono text-5xl leading-12 text-center' >{labels[language].title}</h2>
-            <div className="flex flex-row justify-center px-10 pb-10">
-                <div className='w-1/2 overflow-y-hidden pr-10 flex justify-center items-center'>
+        <div className='bg-light-gray-brand p-5 cursor-default'>
+            <h2 className='font-mono  text-3xl leading-12 text-center xl:text-5xl xl:py-10 font-black xl:font-normal' >{labels[language].title}</h2>
+            <div className="xl:flex flex-row justify-center px-10 pb-10">
+                <div className='xl:w-1/2 overflow-y-hidden xl:pr-10 xl:flex justify-center items-center'>
                     <img src={projectPhoto} alt="projectPhoto"/>
                 </div>
-                <div className=' w-1/2  pl-10'>
+                <div className='xl:w-1/2  pl-10'>
                     <div>
-                        <h3 className='font-mono text-3xl leading-11'>{labels[language].descriptionTitle}</h3>
+                        <h3 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal leading-11'>{labels[language].descriptionTitle}</h3>
                         <p className='font-mono text-xl pb-5'>{labels[language].description}</p>
                         <ul className='font-mono text-xl pb-5 list-disc pl-10'>
                             <li>{labels[language].list1}</li>
@@ -51,7 +51,7 @@ function ProjectComponentVenus(){
                     </div>
                     
                     <div>
-                        <h1 className='font-mono text-3xl leading-11'> {labels[language].technologyTitle}</h1>
+                        <h1 className='font-mono  xl:text-3xl text-2xl leading-11 font-black xl:font-normal'> {labels[language].technologyTitle}</h1>
                         <p className='font-mono text-xl pb-10'>{labels[language].technologyDescription}</p>
                         <div className="flex h-20 space-x-8	">
                         <img src={javaIcon}/>

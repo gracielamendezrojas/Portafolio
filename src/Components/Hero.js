@@ -20,7 +20,7 @@ function Hero(){
         }
     }; 
     return(
-    <div id="aboutMe" className="flex flex-row justify-center ">
+    <div id="aboutMe" className="flex flex-row justify-center cursor-default">
         <div className='w-1/2 h-dvh overflow-y-hidden'>
             <img src={photo} alt="photo"/>
         </div>
