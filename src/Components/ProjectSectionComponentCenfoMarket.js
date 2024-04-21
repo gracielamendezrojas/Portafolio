@@ -32,12 +32,12 @@ function ProjectComponentCenfoMarket(){
     };
     return(
     <div className='bg-light-gray-brand p-5 cursor-default'>
-        <h2 className='font-mono text-3xl leading-12 text-center xl:text-5xl xl:py-10 font-black xl:font-normal xl:py-10' >{labels[language].title}</h2>
+            <h2 className='font-mono  text-3xl sm:leading-12 text-center xl:text-5xl py-10 font-black xl:font-normal' >{labels[language].title}</h2>
         <div className="xl:flex flex-row justify-center px-10 pb-10">
             <div className='xl:w-1/2 overflow-y-hidden xl:pr-10 xl:flex justify-center items-center'>
                 <img src={projectPhoto} alt="projectPhoto"/>
             </div>
-            <div className='xl:w-1/2  pl-10'>
+            <div className='xl:w-1/2  xl:pl-10 p-3'>
                 <div>
                     <h3 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal leading-11'>{labels[language].descriptionTitle}</h3>
                     <p className='font-mono text-xl pb-5'>{labels[language].description}</p>
@@ -51,7 +51,7 @@ function ProjectComponentCenfoMarket(){
                 <div>
                     <h1 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal leading-11'> {labels[language].technologyTitle}</h1>
                     <p className='font-mono text-xl pb-10'>{labels[language].technologyDescription}</p>
-                    <div className="flex h-20 space-x-8	">
+                    <div className="flex md:h-20 h-8 md:space-x-8 space-x-4	">
                         <img src={NET}/>
                         <img src={CSharp}/>
                         <img src={JavaScript}/>

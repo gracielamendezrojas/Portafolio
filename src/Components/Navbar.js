@@ -26,10 +26,8 @@ function Navbar() {
         <LanguageButton />
       </div>
 
-      <ul className=" flex flex-1 container-sm justify-evenly pl-96 pt-2">
-        <li>
-          <a href="#aboutMe">{labels[language].aboutMe}</a>
-        </li>
+      <ul className=" flex flex-1 container-sm justify-evenly pl-96 pt-2 hidden lg:flex">
+
         <li>
           <a href="#projects">{labels[language].projects}</a>
         </li>

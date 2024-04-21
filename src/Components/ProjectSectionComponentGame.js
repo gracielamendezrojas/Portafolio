@@ -31,13 +31,13 @@ function ProjectComponentGame(){
     };
 
     return(
-    <div className='p-5 cursor-default'>
-        <h2 className='font-mono  text-3xl  xl:text-5xl leading-12 text-center font-black xl:font-normal xl:py-10'>{labels[language].title}</h2>
+    <div className='xl:p-5 cursor-default'>
+        <h2 className='font-mono  text-3xl  xl:text-5xl sm:leading-12  text-center font-black xl:font-normal py-10'>{labels[language].title}</h2>
         <div className="xl:flex flex-row justify-center px-10 pb-10">
         <div className='xl:hidden overflow-y-hidden flex justify-center items-center'>
                 <img src={projectPhoto} alt="projectPhoto"/>
             </div>
-            <div className='xl:w-1/2  pl-10'>
+            <div className='xl:w-1/2  xl:pl-10 p-3'>
                 <div>
                     <h3 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal leading-11'>{labels[language].descriptionTitle}</h3>
                     <p className='font-mono text-xl pb-5'>{labels[language].description} </p>
@@ -49,9 +49,9 @@ function ProjectComponentGame(){
                 </div>
                 
                 <div>
-                    <h1 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal  leading-11'>{labels[language].technologyTitle}</h1>
+                    <h1 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal leading-11'>{labels[language].technologyTitle}</h1>
                     <p className='font-mono text-xl pb-10'>{labels[language].technologyDescription}</p>
-                    <div className="flex h-20 space-x-8	">
+                    <div className="flex md:h-20 h-8 md:space-x-8 space-x-4	">
                         <img src={libdgx}/>
                         <img src={java}/>
                         <img src={sqlite}/>
