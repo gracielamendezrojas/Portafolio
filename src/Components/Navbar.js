@@ -20,24 +20,28 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex flex-wrap  justify-between  font-mono bg-light-blue-brand text-2xl pt-3 pb-3 pl-3">
-      <div className="flex pl-2 flex justify-center items-center">
-        <img className=" h-12 mr-4 " src={logo} alt="logo" />
-        <LanguageButton />
-      </div>
 
-      <ul className=" flex flex-1 container-sm justify-evenly pl-96 pt-2 hidden lg:flex">
+    <nav className=" bg-light-blue-brand ">
+      <div className="flex flex-wrap  justify-between  font-mono text-2xl pt-3 pb-3 pl-3 max-w-7xl ml-auto mr-auto">
+        <div className="flex pl-2 flex justify-center items-center">
+          <img className=" h-12 mr-4 " src={logo} alt="logo" />
+          <LanguageButton />
+        </div>
 
-        <li>
-          <a href="#projects">{labels[language].projects}</a>
-        </li>
-        <li>
-          <a href="#socialNetworks">{labels[language].socialNetworks}</a>
-        </li>
-        <li>
-          <a href="#contact">{labels[language].contact}</a>
-        </li>
-      </ul>
+        <ul className=" flex flex-1 container-sm justify-evenly pl-96 pt-2 hidden lg:flex">
+
+          <li>
+            <a href="#projects">{labels[language].projects}</a>
+          </li>
+          <li>
+            <a href="#socialNetworks">{labels[language].socialNetworks}</a>
+          </li>
+          <li>
+            <a href="#contact">{labels[language].contact}</a>
+          </li>
+        </ul>
+        </div>
+
     </nav>
   );
 }

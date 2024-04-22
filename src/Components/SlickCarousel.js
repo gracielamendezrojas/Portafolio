@@ -31,24 +31,25 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
 
   };
   return (
     <Slider {...settings}>
         <div>
-          <p className='font-mono text-5xl pb-5 '> {labels[language].value1} </p>
+          <p className='font-mono text-3xl xl:text-5xl pt-4 xl:p-5'> {labels[language].value1} </p>
         </div>
         <div>
-          <p className='font-mono text-5xl pb-5'> {labels[language].value2} </p>
+          <p className='font-mono text-3xl xl:text-5xl pt-4 xl:p-5'> {labels[language].value2} </p>
         </div>
         <div>
-          <p className='font-mono text-5xl pb-5'> {labels[language].value3} </p>
+          <p className='font-mono text-3xl xl:text-5xl pt-4 xl:p-5'> {labels[language].value3} </p>
         </div>
         <div>
-          <p className='font-mono text-5xl pb-5'> {labels[language].value4} </p>
+          <p className='font-mono text-3xl xl:text-5xl pt-4 xl:p-5'> {labels[language].value4} </p>
         </div>
         <div>
-          <p className='font-mono text-5xl pb-5'> {labels[language].value5} </p>
+          <p className='font-mono text-3xl xl:text-5xl pt-4 xl:p-5'> {labels[language].value5} </p>
         </div>
     </Slider>
   );

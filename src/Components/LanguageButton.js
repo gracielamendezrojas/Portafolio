@@ -13,7 +13,7 @@ function LanguageButton() {
       <select
         onChange={handleOptionChange}
         id="states"
-        class="  cursor-pointer flex items-center justify-center rounded-full p-2 bg-violet-brand text-white hover:text-violet-brand hover:bg-white hover:font-extrabold hover:border-none"
+        className="text-lg lg:text-2xl font-mono cursor-pointer flex items-center justify-center rounded-full p-2 bg-violet-brand text-white hover:text-violet-brand hover:bg-white hover:font-extrabold hover:border-none"
       >
         <option className="" selected value="EN">
           English

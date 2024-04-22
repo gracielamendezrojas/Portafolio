@@ -13,12 +13,12 @@ function ProjectsIntroduction(){
       }
     };
     return(
-    <div id="projects" className="text-center justify-center bg-light-blue-brand py-20 cursor-default">
-
-        <h2 className=' font-mono xl:text-5xl text-3xl text-center font-black xl:font-normal ' >{labels[language].title}</h2>
-        <p className='font-mono xl:text-2xl text-xl p-10'>{labels[language].description}</p>
-
-    </div>
+      <div className="bg-light-blue-brand">
+        <div id="projects" className="text-center justify-center bg-light-blue-brand p-10 cursor-default max-w-7xl ml-auto mr-auto">
+            <h2 className=' font-mono xl:text-5xl text-3xl text-center font-black xl:font-normal pb-10' >{labels[language].title}</h2>
+            <p className='font-mono xl:text-2xl text-xl '>{labels[language].description}</p>
+        </div>
+      </div>
     )
 }
 export default ProjectsIntroduction; 
