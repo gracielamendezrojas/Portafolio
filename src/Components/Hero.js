@@ -20,11 +20,11 @@ function Hero(){
         }
     }; 
     return(
-    <div id="aboutMe" className="xl:flex lg:flex-row cursor-default justify-end	max-w-7xl ml-auto mr-auto px-20">
-        <div className='hidden xl:flex xl:w-1/3  '>
-            <img src={photo} alt="photo"/>
+    <div id="aboutMe" className="xl:flex lg:flex-row cursor-default justify-end	max-w-screen-2xl ml-auto mr-auto px-20">
+        <div className='hidden xl:flex xl:w-2/5  '>
+            <img className="object-cover"src={photo} alt="photo"/>
         </div>
-        <div className='pt-10 pb-10 xl:pt-20  xl:w-2/3 text-center'>
+        <div className='pt-10 pb-10 xl:pt-20  xl:w-3/5 text-center'>
             <h2 className='font-mono text-3xl xl:text-5xl leading-10 pb-5 font-black xl:font-normal' >{labels[language].hi} </h2>
             <h3 className='font-mono text-2xl xl:text-3xl leading-10 pb-5'>{labels[language].me} </h3>
             <p className='font-mono text-lg xl:text-xl pb-5'> {labels[language].profile} </p>

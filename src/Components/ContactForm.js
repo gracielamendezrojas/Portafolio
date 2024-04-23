@@ -49,6 +49,16 @@ function ContactForm(){
 
   const form = useRef();
 
+
+
+  const [formValues, setFormValues] = useState({
+    fullName: "",
+    number: "",
+    email: "",
+    comment: "",
+  });
+  const [records, setRecords] = useState([]);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -58,6 +68,13 @@ function ContactForm(){
           console.log(result.text);  
           setModal(true); 
           setResult(true); 
+          setRecords([...records,formValues]); 
+          setFormValues({
+            fullName: "",
+            number: "",
+            email: "", 
+            comment: "",
+          });
       }, (error) => {
           console.log(error.text);
           setModal(true); 
@@ -73,7 +90,8 @@ function ContactForm(){
             <label for="username" className="font-mono xl:text-xl text-lg">{labels[language].user}</label>
             <div className="mt-2">
               <div className="flex rounded-md focus-within:ring-violet-brand ">
-                <input type="text" name="username" id="username" autocomplete="email" className="block flex-1 border-0  py-1.5 pl-1 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6 text-sm" placeholder={labels[language].placeholderUser} required/>
+                <input value={formValues.fullName} onChange={(e) => setFormValues({ ...formValues, fullName: e.target.value })}
+                 type="text" name="username" id="username" autocomplete="email" className="px-5 block flex-1 border-0  py-1.5  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6 text-sm" placeholder={labels[language].placeholderUser} required/>
               </div>
             </div>
           </div>
@@ -81,7 +99,7 @@ function ContactForm(){
             <label for="email" className="font-mono xl:text-xl text-lg">{labels[language].email}</label>
             <div className="mt-2">
               <div className="flex rounded-md focus-within:ring-violet-brand ">
-                <input type="email" name="email" id="email" autocomplete="email" className="block flex-1 border-0  py-1.5 pl-1 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6 text-sm" placeholder={labels[language].placeholderEmail} required/>
+                <input value={formValues.email} onChange={(e) => setFormValues({ ...formValues, email: e.target.value })} type="email" name="email" id="email" autocomplete="email" className="px-5 block flex-1 border-0  py-1.5  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6 text-sm" placeholder={labels[language].placeholderEmail} required/>
               </div>
             </div>
           </div>
@@ -90,7 +108,7 @@ function ContactForm(){
             <label for="number" className="font-mono xl:text-xl text-lg">{labels[language].number}</label>
             <div className="mt-2">
               <div className="flex rounded-md focus-within:ring-violet-brand ">
-                <input type="text" name="number" id="number" autocomplete="email" className="block flex-1 border-0  py-1.5 pl-1 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6 text-sm" placeholder={labels[language].placeholderNumber} />
+                <input value={formValues.number} onChange={(e) => setFormValues({ ...formValues, number: e.target.value })} type="text" name="number" id="number" autocomplete="email" className="px-5 block flex-1 border-0  py-1.5  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6 text-sm" placeholder={labels[language].placeholderNumber} />
               </div>
             </div>
           </div>
@@ -98,7 +116,7 @@ function ContactForm(){
           <div className="col-span-full pb-5">
             <label for="message" className="font-mono xl:text-xl text-lg">{labels[language].comment}</label>
             <div className="mt-2 ">
-              <textarea id="message" name="message" rows="3" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6" required></textarea>
+              <textarea value={formValues.comment} onChange={(e) => setFormValues({ ...formValues, comment: e.target.value })} id="message" name="message" rows="3" className="px-5 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-brand sm:text-sm sm:leading-6" required></textarea>
             </div>
           </div>
           <button  type="submit" className=" cursor-pointer flex items-center justify-center rounded-full py-2 px-5 bg-violet-brand text-white hover:text-violet-brand hover:bg-white hover:font-extrabold hover:border-solid hover:border-2 hover:border-violet-brand">{labels[language].button}</button>   

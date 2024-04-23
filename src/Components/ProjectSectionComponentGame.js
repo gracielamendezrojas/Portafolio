@@ -31,7 +31,7 @@ function ProjectComponentGame(){
     };
 
     return(
-    <div className='p-5 cursor-default max-w-7xl ml-auto mr-auto'>
+    <div className='p-5 cursor-default max-w-screen-2xl ml-auto mr-auto'>
         <h2 className='font-mono  text-3xl sm:leading-12 text-center xl:text-5xl py-10 font-black xl:font-normal'>{labels[language].title}</h2>
         <div className="xl:flex flex-row justify-center px-10 pb-10">
         <div className='xl:hidden overflow-y-hidden flex justify-center items-center'>
@@ -52,9 +52,9 @@ function ProjectComponentGame(){
                     <h1 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal xl:leading-11'>{labels[language].technologyTitle}</h1>
                     <p className='font-mono text-xl pb-10'>{labels[language].technologyDescription}</p>
                     <div className="flex md:h-20 h-8 md:space-x-8 space-x-4	">
-                        <img src={libdgx}/>
-                        <img src={java}/>
-                        <img src={sqlite}/>
+                        <img src={libdgx} alt="Libdgx icon"/>
+                        <img src={java} alt="Java icon"/>
+                        <img src={sqlite} alt="Sqlite icon"/>
                     </div>
                 </div>
             </div>

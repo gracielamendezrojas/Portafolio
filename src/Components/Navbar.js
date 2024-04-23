@@ -22,7 +22,7 @@ function Navbar() {
   return (
 
     <nav className=" bg-light-blue-brand ">
-      <div className="flex flex-wrap  justify-between  font-mono text-2xl pt-3 pb-3 pl-3 max-w-7xl ml-auto mr-auto">
+      <div className="flex flex-wrap  justify-between  font-mono text-2xl pt-3 pb-3 pl-3 max-w-screen-2xl ml-auto mr-auto">
         <div className="flex pl-2 flex justify-center items-center">
           <img className=" h-12 mr-4 " src={logo} alt="logo" />
           <LanguageButton />

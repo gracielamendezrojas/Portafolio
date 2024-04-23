@@ -21,7 +21,7 @@ function Footer(){
     return(
         <footer className="flex flex-col text-center bg-violet-brand font-mono text-white p-3 lg:leading-9 leading-5	lg:text-lg text-sm cursor-default ">
             <p >{labels[language].email} <a className="underline" href="mailto:mmendezr@ucenfotec.ac.cr">gracielamendez@mgmr.co.cr</a></p>
-            <p className="cursor-default">{labels[language].description}<img className="inline" src={heart}/>{labels[language].description2} </p>
+            <p className="cursor-default">{labels[language].description}<img className="inline" src={heart} alt="heart icon"/>{labels[language].description2} </p>
         </footer>
     ); 
 }

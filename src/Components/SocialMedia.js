@@ -30,7 +30,7 @@ function Contact(){
     };
 
     return(
-        <div id="socialNetworks" className='p-10 max-w-7xl ml-auto mr-auto'>
+        <div id="socialNetworks" className='p-10 max-w-screen-2xl ml-auto mr-auto'>
             <h3 className='font-mono xl:text-5xl text-3xl text-center  font-black xl:font-normal cursor-default'>{labels[language].title}</h3>
             <p className='font-mono  font-black	text-xl text-center pt-5 cursor-default'>{labels[language].description}</p>
 
