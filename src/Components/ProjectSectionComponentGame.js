@@ -34,8 +34,8 @@ function ProjectComponentGame(){
     <div className='p-5 cursor-default max-w-screen-2xl ml-auto mr-auto'>
         <h2 className='font-mono  text-3xl sm:leading-12 text-center xl:text-5xl py-10 font-black xl:font-normal'>{labels[language].title}</h2>
         <div className="xl:flex flex-row justify-center px-10 pb-10">
-        <div className='xl:hidden overflow-y-hidden flex justify-center items-center'>
-                <img src={projectPhoto} alt="projectPhoto"/>
+        <div className='xl:hidden overflow-hidden flex justify-center items-center'>
+                <img className="hover:scale-125 transition-all duration-500 overflow-hidden scroll"  src={projectPhoto} alt="projectPhoto"/>
             </div>
             <div className='xl:w-1/2  xl:pl-10 p-3'>
                 <div>
@@ -58,8 +58,8 @@ function ProjectComponentGame(){
                     </div>
                 </div>
             </div>
-            <div className='xl:w-1/2 overflow-y-hidden pl-10 xl:flex justify-center items-center hidden xl:inline'>
-                <img src={projectPhoto} alt="projectPhoto"/>
+            <div className='xl:w-1/2 overflow-hidden pl-10 xl:flex justify-center items-center hidden xl:inline'>
+                <img className="hover:scale-125 transition-all duration-500 overflow-hidden scroll"  src={projectPhoto} alt="projectPhoto"/>
             </div>
 
         </div>

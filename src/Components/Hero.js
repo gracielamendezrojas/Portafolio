@@ -27,8 +27,8 @@ function Hero(){
         <div className='pt-10 pb-10 xl:pt-20  xl:w-3/5 text-center'>
             <h2 className='font-mono text-3xl xl:text-5xl leading-10 pb-5 font-black xl:font-normal' >{labels[language].hi} </h2>
             <h3 className='font-mono text-2xl xl:text-3xl leading-10 pb-5'>{labels[language].me} </h3>
-            <p className='font-mono text-lg xl:text-xl pb-5'> {labels[language].profile} </p>
-            <div className='flex  lg:w-full justify-center p-5'>
+            <p className='font-mono text-lg xl:text-xl xl:pb-5'> {labels[language].profile} </p>
+            <div className='flex lg:w-full justify-center xl:p-5'>
                 <img src={logo} className='hidden xl:inline xl:h-56 h-32 text-center ' alt="logo"/>
             </div>
             <div className='xl:hidden object-center flex justify-center items-center '>
