@@ -18,7 +18,7 @@ function LanguageButton() {
         <option label="English" className="" selected value="EN">
           English
         </option>
-        <option label="Spanish" className="" value="ES">
+        <option label="Español" className="" value="ES">
           Español
         </option>
       </select>
