@@ -20,7 +20,7 @@ function Hero(){
         }
     }; 
     return(
-    <div id="aboutMe" className="xl:flex lg:flex-row cursor-default justify-end	max-w-screen-2xl ml-auto mr-auto px-20">
+    <div id="aboutMe" className="xl:flex lg:flex-row cursor-default justify-end	max-w-screen-2xl ml-auto mr-auto px-5 xl:px-20">
         <div className='hidden xl:flex xl:w-2/5  '>
             <img className="object-cover"src={photo} alt="photo"/>
         </div>

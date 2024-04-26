@@ -33,8 +33,8 @@ function ProjectComponentCenfoMarket(){
     return(
         <div className='bg-light-gray-brand'>
             <div className='bg-light-gray-brand p-5 cursor-default max-w-screen-2xl ml-auto mr-auto'>
-                <h2 className='font-mono  text-3xl sm:leading-12 text-center xl:text-5xl py-10 font-black xl:font-normal' >{labels[language].title}</h2>
-                <div className="xl:flex flex-row justify-center px-10 pb-10">
+                <h2 className='font-mono  text-3xl sm:leading-12 text-center xl:text-5xl  py-5 xl:py-10 font-black xl:font-normal' >{labels[language].title}</h2>
+                <div className="xl:flex flex-row justify-center xl:px-10 xl:pb-10">
                         <div className='xl:w-1/2 overflow-hidden xl:pr-10 xl:flex justify-center items-center'>
                             <img className="hover:scale-125 transition-all duration-500 overflow-hidden scroll"src={projectPhoto} alt="projectPhoto"/>
                         </div>
