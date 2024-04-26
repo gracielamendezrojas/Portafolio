@@ -38,7 +38,7 @@ function ProjectComponentCenfoMarket(){
                         <div className='xl:w-1/2 overflow-hidden xl:pr-10 xl:flex justify-center items-center'>
                             <img className="hover:scale-125 transition-all duration-500 overflow-hidden scroll"src={projectPhoto} alt="projectPhoto"/>
                         </div>
-                        <div className='xl:w-1/2  xl:pl-10 p-3'>
+                        <div className='xl:w-1/2  xl:pl-5 p-3'>
                             <div>
                                 <h3 className='font-mono xl:text-3xl text-2xl font-black xl:font-normal xl:leading-11'>{labels[language].descriptionTitle}</h3>
                                 <p className='font-mono text-xl pb-5'>{labels[language].description}</p>
